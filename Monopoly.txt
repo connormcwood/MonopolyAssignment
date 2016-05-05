@@ -1,0 +1,26 @@
+2 GO
+1 Red Road 60 5 0
+1 Red Street 80 10 0
+4 Bonus
+1 Grey Road 100 15 1
+1 Grey Street 120 15 1
+6 Jail
+1 Brown Road 140 20 2
+1 Brown Street 160 20 2
+3 Speedy Airport
+1 Orange Road 180 25 3
+1 Orange Street 180 25 3
+1 Orange Way 200 25 3
+8 Free Parking
+1 Yellow Road 220 30 4
+1 Yellow Street 240 30 4
+5 Penalty
+1 Green Road 260 35 5
+1 Green Street 280 35 5
+7 Go to Jail
+1 Blue Road 300 45 6
+1 Blue Street 300 45 6
+1 Blue Way 320 45 6
+3 Shuttle Airport
+1 Purple Road 400 50 7
+1 Purple Street 420 50 7
