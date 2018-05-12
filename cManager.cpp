@@ -416,40 +416,8 @@ void cManager::diceLocationMove(int currentPlayerPosition, int playerDice, cPlay
 }
 void cManager::squareLocation(int playerLocation, cPlayer& playerName, cPlayer& otherPlayerName,
 	vector<cSquare*> &vSquareVector){
-
-	//Uses TYPEID To Determine The Class Type (Pointer Is Needed To Go To Derived Instead Of Base)
-	if (typeid(cGo) == typeid(*(vSquareVector[playerLocation])))
-	{
-		vSquareVector[playerLocation]->do_method(playerName, otherPlayerName);
-	}
-	else if (typeid(cProperty) == typeid(*(vSquareVector[playerLocation])))
-	{
-		vSquareVector[playerLocation]->do_method(playerName, otherPlayerName);
-	}
-	else if (typeid(cAirport) == typeid(*(vSquareVector[playerLocation])))
-	{
-		vSquareVector[playerLocation]->do_method(playerName, otherPlayerName);
-	}
-	else if (typeid(cBonus) == typeid(*(vSquareVector[playerLocation])))
-	{
-		vSquareVector[playerLocation]->do_method(playerName, otherPlayerName);
-	}
-	else if (typeid(cPenalty) == typeid(*(vSquareVector[playerLocation])))
-	{
-		vSquareVector[playerLocation]->do_method(playerName, otherPlayerName);
-	}
-	else if (typeid(cJail) == typeid(*(vSquareVector[playerLocation])))
-	{
-		vSquareVector[playerLocation]->do_method(playerName, otherPlayerName);
-	}
-	else if (typeid(cGoToJail) == typeid(*(vSquareVector[playerLocation])))
-	{
-		vSquareVector[playerLocation]->do_method(playerName, otherPlayerName);
-	}
-	else if (typeid(cFreeParking) == typeid(*(vSquareVector[playerLocation])))
-	{
-		vSquareVector[playerLocation]->do_method(playerName, otherPlayerName);
-	}
+	//Retrieves SquareType and calls its do_method method.
+	vSquareVector[playerLocation]->do_method(playerName, otherPlayerName);	
 }
 void cManager::clearMemory(vector<cSquare*> &vSquareVector)
 {
